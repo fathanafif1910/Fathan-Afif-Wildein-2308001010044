@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function getUserData() {
+            let name = prompt("Enter your name:");
+            let nim = prompt("Enter your NIM:");
+            
+            document.getElementById('name').innerText = "Name: " + name;
+            document.getElementById('nim').innerText = "NIM: " + nim;
+        }
+    </script>
+</head>
+<body onload="getUserData()">
+    <div class="container">
+        <h1>User Information</h1>
+        <p id="name"></p>
+        <p id="nim"></p>
+    </div>
+</body>
+</html>
